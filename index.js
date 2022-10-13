@@ -12,20 +12,20 @@ if( gecmisBilgi !== null) {
 let gecmisBilgi2 = localStorage.getItem("gecmisBilgi2")
 let totalPeople = document.querySelector("#total-people");
 if(gecmisBilgi2 !== null){
-    totalPeople.textContent = localStorage.getItem("gecmisBilgi2")
+    totalPeople.textContent ="Total people:" + localStorage.getItem("gecmisBilgi2")
 }else {
     totalPeople.textContent = ""
 }
 
 
-///////////////////////////////////////////////////////7
+
 let countEl = document.getElementById("count-el")
 let count = 0
 function increment() {
     count += 1
     countEl.textContent = count
 }
-/////////////////////////////////////////////////////////
+
 let totalPeople_mevcut = 0;
 if(gecmisBilgi2 === null){
     totalPeople_mevcut =0;
